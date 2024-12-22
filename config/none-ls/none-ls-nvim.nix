@@ -46,7 +46,7 @@
           };
           prettier = {
             enable = true;
-disableTsServerFormatter = true;
+#disableTsServerFormatter = true;
             settings = ''
               {
                 extra_args = { "--no-semi", "--single-quote" },
