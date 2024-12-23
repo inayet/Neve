@@ -44,14 +44,17 @@
           nixfmt = {
             enable = true;
           };
+
+          # prettier set to false and commented out settings to avoid conflict with `prettier` formatter in none-ls
+          # setting `plugins.none-ls.sources.formatting.prettier.disableTsServerFormatter` to `true`. caused error upstream
           prettier = {
-            enable = true;
-#disableTsServerFormatter = true;
-            settings = ''
-              {
-                extra_args = { "--no-semi", "--single-quote" },
-              }
-            '';
+            enable = false;#true;
+
+            # settings = ''
+            #   {
+            #     extra_args = { "--no-semi", "--single-quote" },
+            #   }
+            # '';
           };
           google_java_format = {
             enable = true;

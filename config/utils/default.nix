@@ -54,7 +54,7 @@
     todo-comments.enable = lib.mkDefault true;
     ultimate-autopair.enable = lib.mkDefault true;
     undotree.enable = lib.mkDefault true;
-    wakatime.enable = lib.mkDefault true;
+    wakatime.enable = lib.mkDefault false; # disableing for now because of contstant reminder of needing api key
     which-key.enable = lib.mkDefault true;
     wilder.enable = lib.mkDefault false;
   };

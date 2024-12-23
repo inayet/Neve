@@ -32,7 +32,7 @@
   lsp.enable = lib.mkDefault true;
   none-ls.enable = lib.mkDefault true;
   sets.enable = lib.mkDefault true;
-  pluginmanagers.enable = lib.mkForce true;
+  pluginmanagers.enable = lib.mkDefault true;
   snippets.enable = lib.mkDefault true;
   statusline.enable = lib.mkDefault true;
   telescope.enable = lib.mkDefault true;
